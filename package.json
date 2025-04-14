@@ -1,0 +1,29 @@
+{
+  "name": "save-resources-extension",
+  "version": "1.0.0",
+  "description": "Automatically saves all sourcemap files with original directory structure",
+  "scripts": {
+    "build": "rimraf build && babel src --out-dir build && esbuild build/* --bundle --minify --allow-overwrite --outdir=build && cp -r static/* build/"
+  },
+  "author": "Far4Ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Far4Ru/save-resources-extension/issues"
+  },
+  "homepage": "https://github.com/Far4Ru/save-resources-extension#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "core-js": "^3.41.0",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.27.0",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "esbuild": "^0.25.2",
+    "eslint": "^9.24.0",
+    "rimraf": "^5.0.10"
+  }
+}

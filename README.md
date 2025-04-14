@@ -1,4 +1,10 @@
-# Save Resources Extension (Chrome)
+<br />
+<p align="center">
+  <a href="https://github.com/Far4Ru/save-resources-extension/releases" target="blank">
+    <img src="screenshots/logo.png" alt="Logo" width="156" height="156">
+  </a>
+  <h2 align="center" style="font-weight: 600">Save Resources Extension (Chrome)</h2>
+</p>
 
 Chrome extension for downloading webpack bundles, TypeScript sources, and associated assets while preserving the original directory structure.
 

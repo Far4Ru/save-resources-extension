@@ -7,7 +7,7 @@ Chrome extension for downloading webpack bundles, TypeScript sources, and associ
 ## Key Features
 
 - Downloads complete webpack bundles from Sources tab
-- Retrieves original .ts files from sourcemaps
+- Retrieves original `.ts` files from sourcemaps
 - Captures referenced assets (images, fonts, CSS)
 - Preserves full directory hierarchy
 
@@ -15,7 +15,7 @@ Chrome extension for downloading webpack bundles, TypeScript sources, and associ
 
 ### From pre-built package
 
-1. Download the latest release from [Releases page]()
+1. Download the latest release from [Releases page](https://github.com/Far4Ru/save-resources-extension/releases)
 2. Unzip the package
 3. In Chrome, go to `chrome://extensions/`
 4. Enable "Developer mode" (toggle in top right)
@@ -36,4 +36,4 @@ npm install
 npm run build
 ```
 
-Production builds output to /build.
+Production builds output to `/build`.

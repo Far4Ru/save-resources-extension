@@ -8,7 +8,7 @@
 
 Chrome extension for downloading webpack bundles, TypeScript sources, and associated assets while preserving the original directory structure.
 
-![Extension Popup](screenshots/popup.png)
+![Extension Popup](screenshots/popup.png?)
 
 ## Key Features
 

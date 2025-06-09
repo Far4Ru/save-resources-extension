@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
             // Reload the page
             if (currentTabId) {
-                chrome.tabs.reload(currentTabId);
+                chrome.tabs.reload(currentTabId, { bypassCache: true });
                 chrome.runtime.sendMessage({
                     action: "startLoad",
                     tabId: currentTabId,
@@ -83,6 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
             (data) => {
                 if (!data) {
                     return;
+                }
+                if (data.loaded !== data.saved) {
+                    controlButton.textContent = "Stop";
+                    downloadButton.disabled = true;
+                    chrome.action.setBadgeText({ text: "", tabId: currentTabId });
                 }
           
                 if (data.saved >= data.loaded && data.loaded !== 0) {
